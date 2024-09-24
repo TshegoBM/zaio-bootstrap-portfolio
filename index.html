@@ -8,175 +8,517 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.122.0">
     <title>Portfolio | Tshegofatso Motsuenyane</title>
-
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/cover/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-      .b-example-divider {
-        width: 100%;
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
-
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
-
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-
-      .btn-bd-primary {
-        --bd-violet-bg: #712cf9;
-        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-
-        --bs-btn-font-weight: 600;
-        --bs-btn-color: var(--bs-white);
-        --bs-btn-bg: var(--bd-violet-bg);
-        --bs-btn-border-color: var(--bd-violet-bg);
-        --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #6528e0;
-        --bs-btn-hover-border-color: #6528e0;
-        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-        --bs-btn-active-color: var(--bs-btn-hover-color);
-        --bs-btn-active-bg: #5a23c8;
-        --bs-btn-active-border-color: #5a23c8;
-      }
-
-      .bd-mode-toggle {
-        z-index: 1500;
-      }
-
-      .bd-mode-toggle .dropdown-menu .active .bi {
-        display: block !important;
-      }
-    </style>
-
+    <!-- Bootstrap icons  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
     
     <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet">
   </head>
-  <body class="d-flex h-100 text-center text-bg-dark">
-    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-      <symbol id="check2" viewBox="0 0 16 16">
-        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-      </symbol>
-      <symbol id="circle-half" viewBox="0 0 16 16">
-        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
-      </symbol>
-      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
-        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
-        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
-      </symbol>
-      <symbol id="sun-fill" viewBox="0 0 16 16">
-        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
-      </symbol>
-    </svg>
+  <body class="bg-body-secondary">
+    <header class="px-5 p-3 text-white fixed-top scrolling">
+      <div>
+        <h3 class="float-md-start text-center">Portfolio</h3>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+          <a class="nav-link active" aria-current="page " href="#">Home</a>
+          <a class="nav-link" href="#about-us">About me</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link" href="./Tshego-Bootstrap-Portfolio/img/Tshegofatso_Motsuenyane_-_Junior_Web_Developer.pdf" download>Download CV</a>
+        </nav>
+      </div>
+    </header>
+    
 
-    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
-              id="bd-theme"
-              type="button"
-              aria-expanded="false"
-              data-bs-toggle="dropdown"
-              aria-label="Toggle theme (auto)">
-        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
-        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-      </button>
-      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
-            Light
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
-            Dark
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
-            Auto
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-      </ul>
+    <div
+      class="banner-wrap vh-100 vw-100 d-flex align-items-center justify-content-center text-white"
+    >
+      <div class="overlay"></div>
+      <main class="text-center">
+        <h1 class="display-1"> I am Tshegofatso Motsuenyane</h1>
+        <span class="lead" id="typed">Full Stack Developer</span>
+      </main>
     </div>
+
+    <section id="about-us">
+      <div class="container p-5">
+        <div class="card">
+          <div class="card-body">
+            <div class="row p-3">
+              <div class="col-md-6 col-sm-12">
+                <div class="row">
+                  <div class="col-md-5">
+                    <img
+                      src="./Tshego-Bootstrap-Portfolio/tshego.jpg"
+                      class="img-fluid"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-7 mt-3">
+                    <p><strong>Name:</strong> Tshegofatso Motsuenyane</p>
+                    <p><strong>Profile:</strong> Full Stack Developer</p>
+                    <p><strong>Email:</strong> tbimotsuenyane@gmail.com</p>
+                    <p><strong>Phone:</strong> 0694877223</p>
+                    <p>
+                      <strong>Skills:</strong>
+                      <span class="badge rounded-pill bg-dark">HTML</span>
+                      <span class="badge rounded-pill bg-dark">CSS</span>
+                      <span class="badge rounded-pill bg-dark">git</span>
+                      <span class="badge rounded-pill bg-dark">javascript</span>
+                      <span class="badge rounded-pill bg-dark">firebase</span>
+                      <span class="badge rounded-pill bg-dark"
+                        >OOP in JavaScript</span
+                      >
+                      <span class="badge rounded-pill bg-dark">ReactJS</span>
+                      <span class="badge rounded-pill bg-dark">Redux</span>
+                      <span class="badge rounded-pill bg-dark">NodeJS</span>
+                      <span class="badge rounded-pill bg-dark">MongoDB</span>
+                      <span class="badge rounded-pill bg-dark">Express.jS</span>
+                      <span class="badge rounded-pill bg-dark">Python</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mt-3">
+                <h1 class="text-center text-md-start">About me</h1>
+                <p class="lead">
+                  I am a Junior Web Developer with a solid foundation in  full-stack development, JavaScript, React, Node, and MongoDB. I have hands-on experience building web applications and am currently working on freelance and personal projects. I am passionate about building high-quality websites that enhance the user experience.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container p-5">
+        <h1 class="text-center">My First Projects</h1>
+        <div class="row">
+          <div class="col-md-4 mt-3">
+            <div class="card">
+              <img
+                src="https://www.pcworld.com/wp-content/uploads/2024/03/Netflix-Hintergrund-1.jpg?quality=50&strip=all"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Netflix Landing Page</h5>
+                <p class="card-text">Built with HTML and CSS</p>
+                <a
+                  href="https://movie-streaming-site-tm.netlify.app/"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >View Website</a
+                >
+                <a
+                  href="https://github.com/TshegoBM/netflix-landing-page"
+                  target="_blank"
+                  class="btn btn-outline-dark"
+                  ><i class="bi bi-code-slash"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-3">
+            <div class="card">
+              <img
+                src="https://www.topgear.com/sites/default/files/2022/03/TopGear%20-%20Tesla%20Model%20Y%20-%20003.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tesla Landing Page</h5>
+                <p class="card-text">Built with HTML and CSS</p>
+                <a
+                  href="https://zaio-car-site-tm.netlify.app/"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >View Website</a
+                >
+                <a
+                  href="https://github.com/TshegoBM/tesla-landing-page"
+                  target="_blank"
+                  class="btn btn-outline-dark"
+                  ><i class="bi bi-code-slash"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-3">
+            <div class="card">
+              <img
+                src="http://res.cloudinary.com/ak-124210/image/upload/v1642058524/re3iw0faxvszuk43nyqe.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Introduction to GitHub</h5>
+                <p class="card-text">Learnt this from the Zaio platform</p>
+                <a
+                  href="https://github.com/TshegoBM"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >GitHub link</a
+                >
+                <a href="" target="_blank" class="btn btn-outline-dark"
+                  ><i class="bi bi-code-slash"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---->
+    </section>
+
+    <!--THE SECOND SECTION OF MY PROJECT-->
+    <section id="projects">
+      <div class="container p-5">
+        <h1 class="text-center">
+          My Second Projects
+        </h1>
+        <div class="row">
+          <div class="col-md-4 mt-3">
+            <div class="card">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASsAAACoCAMAAACPKThEAAAAzFBMVEUAAAD/AAD////p6emxsbGoqKjOzs7KysqCgoKSkpLk5OQiIiIiAABjY2NYWFgoAAD/2dlQUFC4uLjoAABGRkZCAACgoKDx8fHwAACurq6WlpbZ2dm+vr5oaGimAADz8/OzAABUAADAAAA9PT1lAABubm4bGxuHh4cuLi5AQECRAADeAAB4AAANDQ3/srJ3d3f/6emCAABZAAATAADOAAA1AAD/RUUUFBT/kZH/Zmb/0tL/Njb/rq7/iYn/Wlr/KSn/e3v/oqIqKiqNAADtO6NNAAAGMklEQVR4nO2b6WLaOBRGjcwSyMDENMVhKyE0CdmaNk0ns3SWdt7/nQZLuvIV2GCwsJn0O39iGUmWTiRZlmXPAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMjK559SKLtgB8F0ev9uwRtFJQ39+3MUdzp9W3api+f2OdXNJt6cT8sufZH8u7MoxV2JtiZCUi/ocnc5VS24Zdn1a5KBOdFTJ2pZy9PWOdhUkyP7ylVj18pvhwNVlcr9SuknFJ6rsBhmLVBTJJIcuVBXty5UVSpfTIZ9XbeZDj/q8FHWEh2uKzeqKhcmw0tdt6YO93R4nrVEB+vKUbOqVOIsdd1GOthSwVbmIh2sq90nC0t8MlkOVfH1+PSgq5oyNidwsK5cqWKd8Nqq3I0OdTIXaXCgrt46c3Vn8pzpyj3KUHNtVddhN8iH5EgFunrvzBUbsPT8UM2w6jtXJlPnLdCVs6Gduxqp8qvBPVSBZkoB1nBors7duXpvMh2zbnesj0+3L9sP4YpqeeyZ2Va4Q9kOzdXZ2up/+GULV+wxR88aLheHVd4fPe+oOpyEk2o/bmbjtkTeJh90IJC/cFdz9ctYPgx0VKxxdMxcdaph2KpaU95Zb3FucbJ5tXdXJ+JDdlfnca56qh49LbdibWYgi2gFOq5gDY867HDFFc1DBsyPsFy9tHgUZaoRX6+fch916EqIX3dw1YmrzKo1FxZjy5XPXdVXXB3pgLxFkBXL1cRkfE2qrMuFuWVtdiU+/ra1Kyr4gxewhhLarsSVQ1cjnrkqw42wyT2kra/+ibrK739s60o3/jn1nehf3V8qu35CdOPKQq1o1JdPB14uNkzbT+gyXzO4umD5PlLNtKBZXHXhD+mo49SVb3qhTN6hUI1GrZwNK6srIf7c6OqM5auHpq6uVrTuR5Oufryi1XDp6jK+dci8qnEkfTjxcpHdlfj41xau9Ng09MiZ6ZZylNIVDB26arIUshnrSNG9+FSf3mE+vJurxbD1d3ZXNZXkRf05WnLS1YHv7lzJFDREzePUbZZT9qWO3K6E+JbZle5xepHhYanmj6zwblypsYja7qPntfVhwCJlfjviwpUQ/2R0pSuqhvHohkdDbZfXfODYFd1qB/HwKF3p9tYr1tWaibztasjSDIpyRe11EB+W6Cpzu+ILwVF5gyJcsXxpSCzN1bd1kW1XfNYchal7WK6ar9bVNvdBPkmUawy1JFf1/bs6LcPVdvMrvqbQTHXFHq735aoxGo26YbGutpu3s3KrGUNprjjFuNr2eXDBC6WVFl6Bq32tM/Aa1V6LqyzrV5sGqhRX1uh6EK7yzdszuNo8UG1wFaS7KuA+eHlzasi8+2Q3V7uttye4KnV+5Yb1rr5u8x7naa0r2mlUyrzdDft5P5jgqpBnHPY8SM9Y8urztot3XoW5KuTZmdZkltcZtLic98G97GdIckXtylq/Chy7omeF73Gfl1e/duJqL/tkklxRzeXbL7op8lcW0RrpVU5XlBfLV76F1O0t55xhH/uvkl0NWQX1ccjqITc/0ML4Blchy4rveqaXpzIwYX50pHzr7XvZ15fsirbYDuL+KBcg6nGAzie4onf0kV5qVtZ6e33mzSc8eT+ORP3xJqerPewXTXZl3tA3zJRa9g/qj8I3DhJcGY2CLbhyVwuN5qhnpejTf8PPqcp758rVSs7LMxy+qmzaSPwSQVVnkuLKs1L6Sa5sh6tbArJvsE/FkaqVLrjiarZc9ra3YqGd6opteRHd6oqrFvtZf5sTCJvczWoP302kuTIzBQ3t/WHbjq/1XT/B1RVLSTkxV3Mmi653JDgOVDn6Hmd5IurFk534DWbAKhS2zWl6mx7tEFGJrP1XXRXL9NW6Gayj0yEd0rjnx3e7NrtezvmCQ1n3CdnedBT88eK0NvQXDPtjK2Y3XJxrHptEqro6PX3X4/Vavh/22/FP0VFgEswHdd9v2Ht4g/4ijR/Wrl9ciIr4P38/WDz3FzuL+sG+S1U8TZ+ib5if13/wfKZ+PYuifpo+4VNxyc+JlF0qAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAa+M/w6l+VirIVKgAAAAASUVORK5CYII="
+                alt=""
+              />
+              <div class="card-body">
+                <h5 class="card-title">YouTube Clone</h5>
+                <p class="card-text">Built with HTML and CSS</p>
+                <a
+                  href="https://video-streaming-site-tm.netlify.app/"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >View Website</a
+                >
+                <a
+                  href="https://github.com/TshegoBM/youtube-landing-page"
+                  target="_blank"
+                  class="btn btn-outline-dark"
+                  ><i class="bi bi-code-slash"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-3">
+            <div class="card">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM6OcULq6sgS4ll9eVTokXTKq1KgwqUnqjFQ&s"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">X/Twitter Landing Page</h5>
+                <p class="card-text">Built with HTML and CSS</p>
+                <a
+                  href="https://social-media-platform-app-tm.netlify.app/"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >View Website</a
+                >
+                <a
+                  href="https://github.com/TshegoBM/twitter-landing-page"
+                  target="_blank"
+                  class="btn btn-outline-dark"
+                  ><i class="bi bi-code-slash"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-3">
+            <div class="card">
+              <img
+                src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/gk_js.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Google Keep Clone</h5>
+                <p class="card-text">Built with HTML and CSS</p>
+                <a
+                  href="https://note-taking-app-react-tm.netlify.app/"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >View Website</a
+                >
+                <a
+                  href="https://note-taking-app-tm.netlify.app/"
+                  target="_blank"
+                  class="btn btn-outline-dark"
+                  ><i class="bi bi-code-slash"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--THE THIRD SECTION-->
+    <section id="projects">
+      <div class="container p-5">
+        <h1 class="text-center">
+          Html,Css,JavaScript & React Projects
+        </h1>
+        <div class="row">
+          <div class="col-md-4 mt-3">
+            <div class="card">
+              <img
+                src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/reactintro.png"
+                alt=""
+              />
+              <div class="card-body">
+                <h5 class="card-title">Google-Keep React.js</h5>
+                <p class="card-text">Built React</p>
+                <a
+                  href="https://note-taking-app-react-tm.netlify.app/"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >View Website</a
+                >
+                <a
+                  href="https://github.com/TshegoBM/google-keep-react-clone"
+                  target="_blank"
+                  class="btn btn-outline-dark"
+                  ><i class="bi bi-code-slash"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-3">
+            <div class="card">
+              <img
+                src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/amazon.png"
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                <h5 class="card-title">Amazon clone</h5>
+                <p class="card-text">Built with React</p>
+                <a
+                  href=""
+                  target="_blank"
+                  class="btn btn-primary"
+                  >View Website</a
+                >
+                <a
+                  href="https://github.com/TshegoBM/amazon-clone"
+                  target="_blank"
+                  class="btn btn-outline-dark"
+                  ><i class="bi bi-code-slash"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-3">
+            <div class="card">
+              <img
+                src="http://res.cloudinary.com/ak-124210/image/upload/v1668200511/uum4ptpgm3lroibx4j9e.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tic Tac Toe</h5>
+                <p class="card-text">Built with React</p>
+                <a
+                  href="https://game-site-tm.netlify.app/"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >View Website</a
+                >
+                <a
+                  href="https://github.com/TshegoBM/tic-tac-toe"
+                  target="_blank"
+                  class="btn btn-outline-dark"
+                  ><i class="bi bi-code-slash"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---->
+    </section>
+    <!--FOURTH SECTION OF MY PROJECT-->
+    <section id="projects">
+      <div class="container p-5">
+        <h1 class="text-center">
+          React.js & Redux Projects
+        </h1>
+        <div class="row">
+          <div class="col-md-4 mt-3">
+            <div class="card">
+              <img
+                src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/react_airbnb.png"
+                alt=""
+              />
+              <div class="card-body">
+                <h5 class="card-title">Airbnb Clone</h5>
+                <p class="card-text">Built this with React.js & Redux</p>
+                <a href="" target="_blank" class="btn btn-primary"
+                  >View Website</a
+                >
+                <a
+                  href="https://github.com/TshegoBM/airbnb-capstone-project"
+                  target="_blank"
+                  class="btn btn-outline-dark"
+                  ><i class="bi bi-code-slash"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-3">
+            <div class="card">
+              <img
+                src="data:image/jpeg;base64,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"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">STAY TUNED</h5>
+                <p class="card-text"></p>
+                <a href="" target="_blank" class="btn btn-primary"
+                  >View Website</a
+                >
+                <a href="" target="_blank" class="btn btn-outline-dark"
+                  ><i class="bi bi-code-slash"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-3">
+            <div class="card">
+              <img
+                src="data:image/jpeg;base64,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"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">STAY TUNED</h5>
+                <p class="card-text"></p>
+                <a
+                  href="https://github.com/Dakalo988"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >GitHub link</a
+                >
+                <a href="" target="_blank" class="btn btn-outline-dark"
+                  ><i class="bi bi-code-slash"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---->
+    </section>
+
+    <section id="contact">
+      <div class="container p-5">
+        <div class="card p-3">
+          <div class="card-body px-5 text-center">
+            <h1>Let's Connect</h1>
+            <p class="lead">
+              Would love to connect with fellow developers, employers looking
+              for developers, or anyone looking to get web development done.
+            </p>
+            <a
+              class="fs-2"
+              href="https://www.instagram.com/alwaysfreshsadiq?igsh=dWczbmN5bTN5NDZy"
+              ><i class="bi bi-instagram m-2"></i
+            ></a>
+            <a
+              class="fs-2"
+              href="http://www.linkedin.com/in/dakalo-sadiki-172795243"
+              ><i class="bi bi-linkedin m-2"></i
+            ></a>
+            <a class="fs-2" href="https://github.com/Dakalo988"
+              ><i class="bi bi-github m-2"></i
+            ></a>
+
+            <form onsubmit="submitForm(event)">
+              <div class="mb-3">
+                  <input
+                      type="email"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter Email Address"
+                  />
+              </div>
+              <div class="mb-3">
+                  <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Enter Name"
+                  />
+              </div>
+              <div class="mb-3">
+                  <input
+                      type="text"
+                      class="form-control"
+                      id="subject"
+                      placeholder="Enter Subject"
+                  />
+              </div>
+              <div class="mb-3">
+                  <textarea
+                      class="form-control"
+                      aria-label="With textarea"
+                      placeholder="Enter Message"
+                  ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+      </section>
+      <footer class="bg-dark text-center text-white">
+          <div class="container p-3">
+              <p>
+                  &copy;2024 Zaio Bootstrap course, Developed by Tshegofatso Motsuenyane using Bootstrap.
+              </p>
+          </div>
+      </footer>
+      <script>
+        function submitForm(event) {
+            event.preventDefault();
+
+            var email = document.getElementById("email").value;
+            var name = document.getElementById("name").value;
+            var subject = document.getElementById("subject").value;
+            var message = document.getElementById("message").value;
+
+            Email.send({
+                Host: "smtp.elasticemail.com", // Replace with your SMTP server
+                Username: "dakalosadiki98@gmail.com", // Replace with your SMTP username
+                Password: "CE2D4D4E4C67FA6D82EFE1B87CD44459FD17", // Replace with your SMTP password
+                To: 'dakalosadiki98@gmail.com', // Replace with the recipient's email address
+                From: email,
+                Subject: subject,
+                Body: `Name: ${name}<br>Email: ${email}<br>Message: ${message}`
+            }).then(
+                message => alert("Mail sent successfully")
+            );
+        }
+    </script>
 
     
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <header class="mb-auto">
-    <div>
-      <h3 class="float-md-start mb-0">Portfolio</h3>
-      <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Home</a>
-        <a class="nav-link fw-bold py-1 px-0" href="#">Features</a>
-        <a class="nav-link fw-bold py-1 px-0" href="#">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="px-3">
-    <h1>Cover your page.</h1>
-    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-    <p class="lead">
-      <a href="#" class="btn btn-lg btn-light fw-bold border-white bg-white">Learn more</a>
-    </p>
-  </main>
-
-  <footer class="mt-auto text-white-50">
-    <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
-  </footer>
-</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     </body>
